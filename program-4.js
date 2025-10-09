@@ -14,8 +14,6 @@ function mergedAndSort(arr1, arr2) {
     merged.push(arr2[j]);
   }
 
-  //   console.log(merged);
-
   for (let i = 0; i < merged.length; i++) {
     for (let j = 0; j < merged.length; j++) {
       if (merged[j] > merged[j + 1]) {

@@ -19,7 +19,7 @@ function differenceArrays(a1, a2) {
   }
 
   for (let i = 0; i < diff.length - 1; i++) {
-    for (let j = 0; j < diff.length - 1; j++) {
+    for (let j = 0; j < diff.length - 1-i; j++) {
       if (diff[j] > diff[j + 1]) {
         let temp = diff[j];
         diff[j] = diff[j + 1];

@@ -8,16 +8,16 @@ let array = [
 ];
 
 function removeDulpicate(arr) {
-  let original = [];
+  let result = [];
 
   for (let i = 0; i < arr.length; i++) {
     let obj = arr[i];
     let isDuplicate = false;
 
-    for (let j = 0; j < original.length; j++) {
+    for (let j = 0; j < result.length; j++) {
       if (
-        original[j].title === obj.title &&
-        original[j].author === obj.author
+        result[j].title === obj.title &&
+        result[j].author === obj.author
       ) {
         isDuplicate = true;
         break;
@@ -25,10 +25,10 @@ function removeDulpicate(arr) {
     }
 
     if (!isDuplicate) {
-      original.push(obj);
+      result.push(obj);
     }
   }
-  return original;
+  return result;
 }
 
 console.log(removeDulpicate(array));
